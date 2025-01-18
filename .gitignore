@@ -1,0 +1,15 @@
+.idea
+.venv
+.coverage
+**/__pycache__/**
+development.env
+.envrc
+.vscode
+*.ipynb
+venv
+*.env
+.DS_Store
+testenv.sample
+/revenv/
+.pytest_cache
+.python-version
