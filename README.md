@@ -1,5 +1,5 @@
 Steps followed: 
-- Install python3.11, IDE, Anaconda, podman (works like docker), etc., on mac.
+- Install & setup python3.11, IDE, Anaconda, podman (works like docker), etc., on mac.
 - Commands: 
   - `pip install virtualenv`
   - `python3.11 -m venv venv`
@@ -11,7 +11,7 @@ Steps followed:
   - If podman is installed fine, else clean uninstall and reinstall podman desktop again: https://github.com/containers/podman/issues/11319
   - `brew install kafka`
   - Good blog to setup Kafka in mac: https://learn.conduktor.io/kafka/how-to-install-apache-kafka-on-mac-with-homebrew/. Though I run kafka/zookeeper in containers (dockerfile), hence not needed.
-  - `cd` into the root project directory and run: `podman-compose up --build --no-cache` to sping up the containers. 
+  - `cd` into the root project directory and run: `podman-compose up --build --no-cache` to spin up the containers defined in compose file. 
   - If you get errors like container already running or port already used, change the port mapping or stop processes running in port using: `sudo lsof -i :<port_number>`, eg: `lsof -i :2181`. 
 - A sample kafka producer code is written in producer.py file.
 - Useful commands to check workings inside kafka container, you first need to go inside the container: 
